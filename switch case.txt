@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class Weeksfinder{
+public static void main(String[] args){
+Scanner input=new Scanner(System.in);
+System.out.println("enter a day number(1-7):");
+int day = input.nextInt();
+String dayName;
+switch(day){
+case 1:
+   dayName = "Monday";
+break;
+case 2:
+   dayName = "Tuesday";
+break;
+case 3:
+   dayName = "Wednesday";
+break;
+case 4:
+   dayName = "thrusday";
+break;
+case 5:
+   dayName = "Friday";
+break;
+case 6:
+  dayName = "Saturday";
+break;
+case 7:
+ dayName = "sunday";
+break;
+default:
+  dayName = "Invalid input"
+break;
+}
+System.out.println("The day is:"+dayName);
+input.close();
+}
+}
+   
